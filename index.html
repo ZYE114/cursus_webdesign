@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Huiswerk les16-18</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huiswerk les16-18</title>
     <style>
         header {
             width: 100%;
@@ -17,6 +17,10 @@
             font-family: 'Times New Roman', Times, serif;
         }
 
+        body {
+            margin: 0;
+        }
+
         /* For mobile phones: */
         [class*="col-"] {
             width: 100%;
@@ -25,7 +29,6 @@
         @media only screen and (min-width: 600px) {
             [class*="col-"] {
                 float: left;
-                padding: 15px;
             }
 
             /* For desktop: */
@@ -76,6 +79,14 @@
             .col-12 {
                 width: 100%;
             }
+
+            body {
+                margin: 0;
+            }
+
+            h2 {
+                text-align: center;
+            }
         }
 
         #links {
@@ -83,6 +94,7 @@
             min-width: 150px;
             background-color: #E9FFF9;
             display: inline-block;
+            text-align: center; /
         }
 
         #rechts {
@@ -90,12 +102,14 @@
             height: auto;
             display: inline-block;
             padding: 20px;
+            text-align: center; 
         }
 
         #rechtstekst {
             background-color: aquamarine;
             height: auto;
             display: inline-block;
+            text-align: center; 
         }
 
         .vakje {
@@ -106,34 +120,33 @@
         }
 
         ul {
-            list-style-type: disc;
+            list-style-type: none;
         }
 
         #scheveningen {
-            float: right;
-            margin: 0 0 0 15px;
-            width: 300px;
-            height: 200px;
-        }
-        .tekstlinks{
-            float:left;
-            width: 60%;
-            max-width:50%;
+            float: none; 
+            margin: 15px auto 0; 
+            display: block; 
         }
 
-        .plaatjerechts{
-            float:right;
-            width: 40%;
+        .tekstlinks {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
         }
-      
+
+        .plaatjerechts {
+            width: 80%;
+            margin: 0 auto;
+        }
     </style>
+</head>
 
 <body>
-    <header>Den Haag
-
-    </header>
+    <header>Den Haag</header>
     <div class="col-2">
         <section id="links">
+            <h2>Wist je dat...</h2>
             <ul>
                 <li>11 km kustlijn</li>
                 <li>Wonen meer dan 180 nationaliteiten</li>
@@ -145,25 +158,30 @@
     </div>
     <div class="col-9">
         <section id="rechts">
+            <h2>Scheveningen</h2>
             <div class="vakje">
-                <p class="tekstlinks">"Oh oh DenHaag, een mooie stad achter de duinen". Zo kent iedereen dit deuntje als je het hebt over
+                <p class="tekstlinks">"Oh oh DenHaag, een mooie stad achter de duinen". Zo kent iedereen dit deuntje als
+                    je het hebt over
                     Den
                 </p>
                 <img class="plaatjerechts" src="scheveningen.jpeg" alt="scheveningen" id="scheveningen">
             </div>
 
             <div class="vakje">
-                <p class="tekstlinks">"Oh oh DenHaag, een mooie stad achter de duinen". Zo kent iedereen dit deuntje als je het hebt over
+                <p class="tekstlinks">"Oh oh DenHaag, een mooie stad achter de duinen". Zo kent iedereen dit deuntje als
+                    je het hebt over
                     Den
                     Haag, Scheveningen.
                     Scheveningen wordt ook wel de vissersplaats of badplaats van Den Haag genoemd. Highlights van
-                    Scheveningen is de Pier, Reuzenrad en Kurhaus. Langs de boulevard zijn veel restaurantjes en
-                    strandtentjes te vinden. Ook is het mogelijk om surflessen te nemen. Je kan veel leuke activiteiten
+                    Scheveningen zijn de Pier, Reuzenrad en Kurhaus. Langs de boulevard zijn veel restaurantjes en
+                    strandtentjes te vinden. Ook is het mogelijk om surflessen te nemen. Je kunt veel leuke activiteiten
                     doen.
                 </p>
-                <img class="plaatjerechts" src="scheveningen.jpeg" alt="scheveningen" id="scheveningen">
+                <img class="plaatjerechts" src="pier.jpeg" alt="pier" id="pier">
             </div>
         </section>
     </div>
 
 </body>
+
+</html>
