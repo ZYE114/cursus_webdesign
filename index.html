@@ -1,187 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Huiswerk les16-18</title>
+    <title>YC_Huiswerk_22</title>
+    <!-- Bootstrap CDN-link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        header {
-            width: 100%;
-            height: 250px;
-            background-image: url('denhaag.jpeg');
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            text-align: center;
-            color: white;
-            font-size: 90px;
-            font-family: 'Times New Roman', Times, serif;
+        /* Aangepaste CSS-stijl */
+        .custom-style {
+            background-color: #8AB1D7;
+            padding: 20px;
         }
 
-        body {
-            margin: 0;
-        }
-
-        /* For mobile phones: */
-        [class*="col-"] {
-            width: 100%;
-        }
-
-        @media only screen and (min-width: 600px) {
-            [class*="col-"] {
-                float: left;
-            }
-
-            /* For desktop: */
-            .col-1 {
-                width: 8.33%;
-            }
-
-            .col-2 {
-                width: 16.66%;
-            }
-
-            .col-3 {
-                width: 25%;
-            }
-
-            .col-4 {
-                width: 33.33%;
-            }
-
-            .col-5 {
-                width: 41.66%;
-            }
-
-            .col-6 {
-                width: 50%;
-            }
-
-            .col-7 {
-                width: 58.33%;
-            }
-
-            .col-8 {
-                width: 66.66%;
-            }
-
-            .col-9 {
-                width: 75%;
-            }
-
-            .col-10 {
-                width: 83.33%;
-            }
-
-            .col-11 {
-                width: 91.66%;
-            }
-
-            .col-12 {
+        @media (max-width: 576px) {
+            .container {
                 width: 100%;
             }
-
-            body {
-                margin: 0;
-            }
-
-            h2 {
-                text-align: center;
-            }
-        }
-
-        #links {
-            min-height: 300px;
-            min-width: 150px;
-            background-color: #E9FFF9;
-            display: inline-block;
-            text-align: center; /
-        }
-
-        #rechts {
-            background-color: #467599;
-            height: auto;
-            display: inline-block;
-            padding: 20px;
-            text-align: center; 
-        }
-
-        #rechtstekst {
-            background-color: aquamarine;
-            height: auto;
-            display: inline-block;
-            text-align: center; 
-        }
-
-        .vakje {
-            min-height: 150px;
-            background-color: #9ED8D8;
-            display: inline-block;
-            width: 100%;
-        }
-
-        ul {
-            list-style-type: none;
-        }
-
-        #scheveningen {
-            float: none; 
-            margin: 15px auto 0; 
-            display: block; 
-        }
-
-        .tekstlinks {
-            width: 80%;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .plaatjerechts {
-            width: 80%;
-            margin: 0 auto;
         }
     </style>
 </head>
 
 <body>
-    <header>Den Haag</header>
-    <div class="col-2">
-        <section id="links">
-            <h2>Wist je dat...</h2>
-            <ul>
-                <li>11 km kustlijn</li>
-                <li>Wonen meer dan 180 nationaliteiten</li>
-                <li>Heeft 2 grote stations: Den Haag Holland Spoor en Den Haag Centraal</li>
-                <li>Inwoner in Den Haag heet Hagenees of Hagenaar</li>
-                <li>Telt 562.466 inwoners (op 31-01-2023).</li>
+    <nav class="navbar navbar-light" style="background-color: #a1cae8; ">
+        <a class="navbar-brand" href="index.html">YukYui Chung</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="overmij.html">Over Mij</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
             </ul>
-        </section>
-    </div>
-    <div class="col-9">
-        <section id="rechts">
-            <h2>Scheveningen</h2>
-            <div class="vakje">
-                <p class="tekstlinks">"Oh oh DenHaag, een mooie stad achter de duinen". Zo kent iedereen dit deuntje als
-                    je het hebt over
-                    Den
-                </p>
-                <img class="plaatjerechts" src="scheveningen.jpeg" alt="scheveningen" id="scheveningen">
-            </div>
+        </div>
+    </nav>
 
-            <div class="vakje">
-                <p class="tekstlinks">"Oh oh DenHaag, een mooie stad achter de duinen". Zo kent iedereen dit deuntje als
-                    je het hebt over
-                    Den
-                    Haag, Scheveningen.
-                    Scheveningen wordt ook wel de vissersplaats of badplaats van Den Haag genoemd. Highlights van
-                    Scheveningen zijn de Pier, Reuzenrad en Kurhaus. Langs de boulevard zijn veel restaurantjes en
-                    strandtentjes te vinden. Ook is het mogelijk om surflessen te nemen. Je kunt veel leuke activiteiten
-                    doen.
-                </p>
-                <img class="plaatjerechts" src="pier.jpeg" alt="pier" id="pier">
+    <div class="container">
+        <h1>Buongiorno!</h1>
+        <p>Welkom op mijn pagina. Hieronder zie je 9 foto's die ik geschoten heb in Milaan, Bellagio en Lugano. Dit was
+            tijdens mijn weekendtrip geschoten. Ik ben er blij mee met hoe het is geworden. </p>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="plaatje1.png" alt="Afbeelding 1" class="img-fluid mb-4">
             </div>
-        </section>
+            <div class="col-md-4">
+                <img src="plaatje2.png" alt="Afbeelding 2" class="img-fluid mb-4">
+            </div>
+            <div class="col-md-4">
+                <img src="plaatje3.png" alt="Afbeelding 3" class="img-fluid mb-4">
+            </div>
+            <div class="col-md-4">
+                <img src="plaatje4.png" alt="Afbeelding 4" class="img-fluid mb-4">
+            </div>
+            <div class="col-md-4">
+                <img src="plaatje5.png" alt="Afbeelding 5" class="img-fluid mb-4">
+            </div>
+            <div class="col-md-4">
+                <img src="plaatje6.png" alt="Afbeelding 6" class="img-fluid mb-4">
+            </div>
+            <div class="col-md-4">
+                <img src="plaatje7.png" alt="Afbeelding 7" class="img-fluid mb-4">
+            </div>
+            <div class="col-md-4">
+                <img src="plaatje8.png" alt="Afbeelding 8" class="img-fluid mb-4">
+            </div>
+            <div class="col-md-4">
+                <img src="plaatje9.png" alt="Afbeelding 9" class="img-fluid mb-4">
+            </div>
+        </div>
     </div>
 
+    <footer style="height: 200px; background-color:#a1cae8 ; color: white; text-align: center; padding-top: 80px;">
+        &copy; 2023 - Alle rechten voorbehouden.
+    </footer>
+
+    <!-- Bootstrap JS-scripts en popper.js via CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
