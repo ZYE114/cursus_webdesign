@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Verstoppertje</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <button id="showButton">Toon bericht</button>
+    <p id="hiddenMessage" style="display:none;">Dit is een verborgen bericht.</p>
+
+    <script>
+        $(document).ready(function() {
+            $("#showButton").click(function() {
+                $("#hiddenMessage").show();
+            });
+        });
+    </script>
+
+</body>
+</html>
